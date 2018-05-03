@@ -1602,3 +1602,6 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-04 00:12:24.559
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-05-04 00:13:44.758
+!MESSAGE No repository found at http://storage.googleapis.com/gwt-eclipse-plugin/v2/release.
