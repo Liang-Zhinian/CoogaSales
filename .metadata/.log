@@ -62,3 +62,108 @@ java.net.ConnectException: Operation timed out (Connection timed out)
 	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:28.790
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:28.822
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.398
+!MESSAGE The POM for net.sf.jpf:jpf-boot:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.399
+!MESSAGE The POM for net.sf.jpf:jpf:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.550
+!MESSAGE The POM for com.dove:dove-core:jar:1.0.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.602
+!MESSAGE The POM for betelio:betelio:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.662
+!MESSAGE The POM for com.oracle:ojdbc6:jar:11.2.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.664
+!MESSAGE The POM for com.microsoft.sqlserver:sqljdbc4:jar:4.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.959
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:30.966
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:31.151
+!MESSAGE The POM for net.sf.jpf:jpf-boot:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:31.152
+!MESSAGE The POM for net.sf.jpf:jpf:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:31.199
+!MESSAGE The POM for betelio:betelio:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:31.842
+!MESSAGE The POM for com.sun.media:jai-codec:jar:1.1.3 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:31.987
+!MESSAGE The POM for com.oracle:ojdbc6:jar:11.2.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:31.989
+!MESSAGE The POM for com.microsoft.sqlserver:sqljdbc4:jar:4.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:32.388
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:32.394
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.326
+!MESSAGE The POM for com.sun.media:jai-codec:jar:1.1.3 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.344
+!MESSAGE The POM for betelio:betelio:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.366
+!MESSAGE The POM for com.oracle:ojdbc6:jar:11.2.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.367
+!MESSAGE The POM for com.microsoft.sqlserver:sqljdbc4:jar:4.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.391
+!MESSAGE The POM for net.sf.jpf:jpf-boot:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.392
+!MESSAGE The POM for net.sf.jpf:jpf:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.428
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 22:51:33.433
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:01.499
+!MESSAGE The POM for com.sun.media:jai-codec:jar:1.1.3 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:01.518
+!MESSAGE The POM for betelio:betelio:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:01.538
+!MESSAGE The POM for com.oracle:ojdbc6:jar:11.2.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:01.540
+!MESSAGE The POM for com.microsoft.sqlserver:sqljdbc4:jar:4.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:01.566
+!MESSAGE The POM for net.sf.jpf:jpf-boot:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:01.567
+!MESSAGE The POM for net.sf.jpf:jpf:jar:1.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:02.187
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:02.189
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-03 23:00:02.221
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

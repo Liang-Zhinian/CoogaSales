@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   
   <parent>
-    <groupId>com.dove</groupId>
-    <artifactId>dove</artifactId>
+    <groupId>com.coogasales</groupId>
+    <artifactId>coogasales</artifactId>
     <version>1.0.0</version>
   </parent>
   
