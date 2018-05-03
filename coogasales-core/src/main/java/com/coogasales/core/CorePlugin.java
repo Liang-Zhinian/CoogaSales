@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 //import com.coogasales.core.task.TaskManager;
 import com.coogasales.util.config.ContextProperties;
-import com.coogasales.util.plugin.coogasalesPlugin;
+import com.coogasales.util.plugin.CoogaSalesPlugin;
 
 /**
  * Plugin class for the Core plugin
@@ -16,7 +16,7 @@ import com.coogasales.util.plugin.coogasalesPlugin;
  * @author Marco Meschieri - Logical Objects
  * @since 3.5.0
  */
-public class CorePlugin extends coogasalesPlugin {
+public class CorePlugin extends CoogaSalesPlugin {
 
 	protected static Logger log = LoggerFactory.getLogger(CorePlugin.class);
 
