@@ -323,5 +323,136 @@
       </dependency>
   </dependencies>
   <build>
+      <plugins>
+         <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.5.3</version>
+            <configuration>
+               <descriptors>
+                  <descriptor>src/main/assembly/assemblyapi.xml</descriptor>
+               </descriptors>
+            </configuration>
+            <executions>
+               <execution>
+                  <id>make-assembly</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>attached</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>copy-dependencies</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>copy</goal>
+                  </goals>
+                  <configuration>
+                     <artifactItems>
+                     <!--
+                        <artifactItem>
+                           <groupId>com.coogasales</groupId>
+                           <artifactId>coogasales-gui</artifactId>
+                           <version>${project.version}</version>
+                           <type>zip</type>
+                           <classifier>plugin</classifier>
+                           <overWrite>true</overWrite>
+                           <outputDirectory>${project.build.directory}/war/</outputDirectory>
+                        </artifactItem>-->
+                        <artifactItem>
+                           <groupId>com.coogasales</groupId>
+                           <artifactId>coogasales-core</artifactId>
+                           <version>${project.version}</version>
+                           <type>zip</type>
+                           <classifier>plugin</classifier>
+                           <overWrite>true</overWrite>
+                           <outputDirectory>${project.build.directory}/war/</outputDirectory>
+                        </artifactItem>
+                        <!--
+                        <artifactItem>
+                           <groupId>com.coogasales</groupId>
+                           <artifactId>coogasales-webservice</artifactId>
+                           <version>${project.version}</version>
+                           <type>zip</type>
+                           <classifier>plugin</classifier>
+                           <overWrite>true</overWrite>
+                           <outputDirectory>${project.build.directory}/war/</outputDirectory>
+                        </artifactItem>-->
+                     </artifactItems>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>package</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <unzip src="target/${project.artifactId}-${project.version}.war" dest="target/war" />
+                        <delete dir="target/war/WEB-INF/classes/com/coogasales/gui" />
+                        <delete dir="target/war/work" />
+                        <delete dir="target/war/META-INF" />
+                        <delete>
+                           <fileset dir="target/war/WEB-INF/lib" includes="gwt-user*,smartgwt-skin*,coogasales-webapp*,gwtevent*,guava-14*" />
+                        </delete>
+                        <copy file="src/main/resources/context.properties" tofile="target/war/WEB-INF/classes/context.properties" overwrite="true" />
+                        <unzip dest="target/war">
+                           <fileset dir="target/war">
+                              <include name="*-plugin.zip" />
+                           </fileset>
+                        </unzip>
+                        <delete>
+                           <fileset dir="target/war">
+                              <include name="*-plugin.zip" />
+                           </fileset>
+                        </delete>
+                        <zip destfile="target/${project.artifactId}-${project.version}.war" basedir="target/war" />
+                     </tasks>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.1.1</version>
+            <configuration>
+               <excludes>**/.svnignore</excludes>
+               <excludes>WEB-INF/classes/**</excludes>
+               <excludes>WEB-INF/lib/*.jar</excludes>
+               <archive>
+                  <addMavenDescriptor>false</addMavenDescriptor>
+               </archive>
+            </configuration>
+         </plugin>
+         
+         
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <path>/coogasales-webapp-1.0.0</path>
+                    <port>8083</port>
+                    <uriEncoding>UTF-8</uriEncoding>
+                    <url>http://127.0.0.1:8083/manager/html</url>
+                    <server>myserver</server>
+                    <username>admin</username>
+                    <password>admin</password>
+                </configuration>
+            </plugin>
+      </plugins>
   </build>
 </project>
