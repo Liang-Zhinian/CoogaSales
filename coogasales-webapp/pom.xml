@@ -8,21 +8,21 @@
     <version>1.0.0</version>
   </parent>
   
-  <artifactId>dove-webapp</artifactId>
+  <artifactId>coogasales-webapp</artifactId>
   <packaging>war</packaging>
-  <name>dove-webapp</name>
+  <name>coogasales-webapp</name>
     <version>1.0.0</version>
 
   <dependencies>
   
     <dependency>
-         <groupId>com.dove</groupId>
-         <artifactId>dove-core</artifactId>
+         <groupId>com.coogasales</groupId>
+         <artifactId>coogasales-core</artifactId>
          <version>${project.version}</version>
       </dependency>
     <dependency>
-         <groupId>com.dove</groupId>
-         <artifactId>dove-util</artifactId>
+         <groupId>com.coogasales</groupId>
+         <artifactId>coogasales-util</artifactId>
          <version>${project.version}</version>
       </dependency>
       

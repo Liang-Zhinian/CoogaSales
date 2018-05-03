@@ -6,8 +6,8 @@
       <artifactId>coogasales</artifactId>
       <version>1.0.0</version>
    </parent>
-   <artifactId>dove-util</artifactId>
-   <name>dove-util</name>
+   <artifactId>coogasales-util</artifactId>
+   <name>coogasales-util</name>
    <packaging>jar</packaging>
    <dependencies>
       <dependency>

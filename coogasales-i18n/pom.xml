@@ -8,8 +8,8 @@
 		<artifactId>coogasales</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>dove-i18n</artifactId>
-	<name>dove-i18n</name>
+	<artifactId>coogasales-i18n</artifactId>
+	<name>coogasales-i18n</name>
 	<packaging>jar</packaging>
 	<dependencies />
 </project>
