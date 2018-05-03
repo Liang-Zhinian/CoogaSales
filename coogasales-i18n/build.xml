@@ -26,7 +26,7 @@
 	
 	<target name="purify" depends="init-all">
 		<echo>Purify all bundles</echo>
-		<java classname="com.dove.i18n.PurifyRB">
+		<java classname="com.coogasales.i18n.PurifyRB">
 			<classpath>
 				<pathelement location="target/classes" />
 			</classpath>

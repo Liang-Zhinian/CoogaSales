@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-lazy="false">
-  <class name="com.dove.core.metadata.Template" table="ld_template" where="ld_deleted=0">
+  <class name="com.coogasales.core.metadata.Template" table="ld_template" where="ld_deleted=0">
     <cache usage="read-write" />
     <id name="id" type="long" column="ld_id" unsaved-value="0">
       <generator class="hilo" />
@@ -18,7 +18,7 @@
     <map name="attributes" table="ld_template_ext" lazy="false" cascade="all" order-by="ld_position asc">
       <key column="ld_templateid" />
       <map-key type="string" column="ld_name" length="255" />
-      <composite-element class="com.dove.core.metadata.Attribute">
+      <composite-element class="com.coogasales.core.metadata.Attribute">
         <property name="setId" type="long" column="ld_setid" />
         <property name="label" type="string" column="ld_label" length="255"/>
         <property name="mandatory" type="int" column="ld_mandatory" not-null="true" />

@@ -16,7 +16,7 @@
             http://www.springframework.org/schema/security
             http://www.springframework.org/schema/security/spring-security.xsd">
    
-   <bean id="EventCollector" class="com.dove.core.communication.EventCollector" init-method="start" destroy-method="stop">
+   <bean id="EventCollector" class="com.coogasales.core.communication.EventCollector" init-method="start" destroy-method="stop">
       <property name="config" ref="ContextProperties" />
    </bean>
     
@@ -40,14 +40,14 @@
    <!-- DAOs -->
    <bean id="SessionDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.dao.HibernateSessionDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.dao.HibernateSessionDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>   
    <bean id="UserDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.dao.HibernateUserDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.dao.HibernateUserDAO" lazy-init="default">
             <property name="config" ref="ContextProperties" />
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="userHistoryDAO" ref="UserHistoryDAO" />
@@ -58,7 +58,7 @@
    </bean>
    <bean id="MenuDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.dao.HibernateMenuDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.dao.HibernateMenuDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="userDAO" ref="UserDAO" />
          </bean>
@@ -66,14 +66,14 @@
    </bean>
    <bean id="FolderHistoryDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.folder.HibernateFolderHistoryDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.folder.HibernateFolderHistoryDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="FolderDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.folder.HibernateFolderDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.folder.HibernateFolderDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="userDAO" ref="UserDAO" />
             <property name="historyDAO" ref="FolderHistoryDAO" />
@@ -83,7 +83,7 @@
    </bean>
    <bean id="GroupDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.dao.HibernateGroupDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.dao.HibernateGroupDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="menuDAO" ref="MenuDAO" />
          </bean>
@@ -91,7 +91,7 @@
    </bean>
    <bean id="TicketDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.ticket.HibernateTicketDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.ticket.HibernateTicketDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="contextProperties" ref="ContextProperties" />
             <property name="documentDAO" ref="DocumentDAO" />
@@ -100,14 +100,14 @@
    </bean>
    <bean id="HistoryDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateHistoryDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateHistoryDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="VersionDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateVersionDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateVersionDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="folderDAO" ref="FolderDAO" />
             <property name="storer" ref="Storer" />
@@ -116,7 +116,7 @@
    </bean>
    <bean id="DocumentDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateDocumentDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateDocumentDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="noteDAO" ref="DocumentNoteDAO" />
             <property name="historyDAO" ref="HistoryDAO" />
@@ -133,14 +133,14 @@
    </bean>
    <bean id="AttributeOptionDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.metadata.HibernateAttributeOptionDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.metadata.HibernateAttributeOptionDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="AttributeSetDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.metadata.HibernateAttributeSetDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.metadata.HibernateAttributeSetDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="optionsDao" ref="AttributeOptionDAO" />
             <property name="templateDao" ref="TemplateDAO" />
@@ -149,49 +149,49 @@
    </bean>
    <bean id="TemplateDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.metadata.HibernateTemplateDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.metadata.HibernateTemplateDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="SystemMessageDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.communication.HibernateSystemMessageDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.communication.HibernateSystemMessageDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="MessageTemplateDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.communication.HibernateMessageTemplateDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.communication.HibernateMessageTemplateDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="DocumentLinkDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateDocumentLinkDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateDocumentLinkDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="GenericDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.generic.HibernateGenericDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.generic.HibernateGenericDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="SequenceDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.sequence.HibernateSequenceDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.sequence.HibernateSequenceDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="UserHistoryDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.dao.HibernateUserHistoryDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.dao.HibernateUserHistoryDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="config" ref="ContextProperties" />
          </bean>
@@ -199,42 +199,42 @@
    </bean>
    <bean id="BookmarkDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateBookmarkDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateBookmarkDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="FeedMessageDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.rss.dao.HibernateFeedMessageDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.rss.dao.HibernateFeedMessageDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="RatingDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateRatingDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateRatingDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="DocumentNoteDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.document.dao.HibernateDocumentNoteDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.document.dao.HibernateDocumentNoteDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="ContactDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.contact.HibernateContactDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.contact.HibernateContactDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
          </bean>
       </property>
    </bean>
    <bean id="TenantDAO" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.dao.HibernateTenantDAO" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.dao.HibernateTenantDAO" lazy-init="default">
             <property name="sessionFactory" ref="SessionFactory" />
             <property name="conf" ref="ContextProperties" />
             <property name="genericDao" ref="GenericDAO" />
@@ -250,7 +250,7 @@
    <!-- Managers -->
    <bean id="SecurityManager" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean abstract="false" autowire="default" class="com.dove.core.security.SecurityManagerImpl" lazy-init="default">
+         <bean abstract="false" autowire="default" class="com.coogasales.core.security.SecurityManagerImpl" lazy-init="default">
             <property name="userDAO" ref="UserDAO" />
             <property name="groupDAO" ref="GroupDAO" />
             <property name="menuDAO" ref="MenuDAO" />
@@ -261,7 +261,7 @@
    </bean>
    <bean id="DocumentManager" abstract="false" autowire="default" lazy-init="default" parent="ApplicationBaseTransactionProxy">
       <property name="target">
-         <bean class="com.dove.core.document.DocumentManagerImpl">
+         <bean class="com.coogasales.core.document.DocumentManagerImpl">
             <property name="config" ref="ContextProperties" />
             <property name="documentDAO" ref="DocumentDAO" />
             <property name="documentNoteDAO" ref="DocumentNoteDAO" />
@@ -276,29 +276,29 @@
          </bean>
       </property>
    </bean>
-   <bean id="TaskManager" class="com.dove.core.task.TaskManager" />
-   <bean id="DocumentListenerManager" class="com.dove.core.document.DocumentListenerManager" />
-   <bean id="UserListenerManager" class="com.dove.core.security.UserListenerManager" />
-   <bean id="ThumbnailManager" class="com.dove.core.document.thumbnail.ThumbnailManager">
+   <bean id="TaskManager" class="com.coogasales.core.task.TaskManager" />
+   <bean id="DocumentListenerManager" class="com.coogasales.core.document.DocumentListenerManager" />
+   <bean id="UserListenerManager" class="com.coogasales.core.security.UserListenerManager" />
+   <bean id="ThumbnailManager" class="com.coogasales.core.document.thumbnail.ThumbnailManager">
       <property name="storer" ref="Storer" />
    </bean>
-   <bean id="FormatConverterManager" class="com.dove.core.conversion.FormatConverterManager">
+   <bean id="FormatConverterManager" class="com.coogasales.core.conversion.FormatConverterManager">
       <property name="config" ref="ContextProperties" />
       <property name="storer" ref="Storer" />
       <property name="tenantDao" ref="TenantDAO" />
       <property name="documentManager" ref="DocumentManager" />
    </bean>
-   <bean id="LockManager" class="com.dove.core.lock.LockManager">
+   <bean id="LockManager" class="com.coogasales.core.lock.LockManager">
       <property name="config" ref="ContextProperties" />
       <property name="genericDao" ref="GenericDAO" />
    </bean>
-   <bean id="AuthenticationChain" class="com.dove.core.security.authentication.AuthenticationChain" />
-   <bean id="SessionManager" class="com.dove.core.security.SessionManager" destroy-method="destroy">
+   <bean id="AuthenticationChain" class="com.coogasales.core.security.authentication.AuthenticationChain" />
+   <bean id="SessionManager" class="com.coogasales.core.security.SessionManager" destroy-method="destroy">
       <property name="authenticationChain" ref="AuthenticationChain" />
       <property name="sessionDao" ref="SessionDAO" />
    </bean>
    <!-- Mail sender -->
-   <bean id="EMailSender" abstract="false" autowire="default" class="com.dove.core.communication.EMailSender" lazy-init="default">
+   <bean id="EMailSender" abstract="false" autowire="default" class="com.coogasales.core.communication.EMailSender" lazy-init="default">
       <property name="host" value="${default.smtp.host}" />
       <property name="port" value="${default.smtp.port}" />
       <property name="username" value="${default.smtp.username}" />
@@ -308,7 +308,7 @@
       <property name="connectionSecurity" value="${default.smtp.connectionSecurity}" />
    </bean>
    <!-- Tasks -->
-   <bean id="IndexOptimizer" class="com.dove.core.searchengine.IndexOptimizer">
+   <bean id="IndexOptimizer" class="com.coogasales.core.searchengine.IndexOptimizer">
       <property name="indexer" ref="SearchEngine" />
       <property name="documentDao" ref="DocumentDAO" />
       <property name="config" ref="ContextProperties" />
@@ -322,12 +322,12 @@
       <property name="targetMethod" value="run" />
       <property name="concurrent" value="false" />
    </bean>
-   <bean id="IndexOptimizerTrigger" class="com.dove.core.task.TaskTrigger">
+   <bean id="IndexOptimizerTrigger" class="com.coogasales.core.task.TaskTrigger">
       <property name="task" ref="IndexOptimizer" />
       <property name="jobDetail" ref="IndexOptimizerJob" />
       <property name="config" ref="ContextProperties" />
    </bean>
-   <bean id="TagsProcessor" class="com.dove.core.document.TagsProcessor">
+   <bean id="TagsProcessor" class="com.coogasales.core.document.TagsProcessor">
       <property name="config" ref="ContextProperties" />
       <property name="userDao" ref="UserDAO" />
       <property name="lockManager" ref="LockManager" />
@@ -340,12 +340,12 @@
       <property name="targetMethod" value="run" />
       <property name="concurrent" value="false" />
    </bean>
-   <bean id="TagsProcessorTrigger" class="com.dove.core.task.TaskTrigger">
+   <bean id="TagsProcessorTrigger" class="com.coogasales.core.task.TaskTrigger">
       <property name="task" ref="TagsProcessor" />
       <property name="jobDetail" ref="TagsProcessorJob" />
       <property name="config" ref="ContextProperties" />
    </bean>
-   <bean id="IndexerTask" class="com.dove.core.searchengine.IndexerTask">
+   <bean id="IndexerTask" class="com.coogasales.core.searchengine.IndexerTask">
       <property name="indexer" ref="SearchEngine" />
       <property name="documentDao" ref="DocumentDAO" />
       <property name="documentManager" ref="DocumentManager" />
@@ -361,7 +361,7 @@
       <property name="targetMethod" value="run" />
       <property name="concurrent" value="false" />
    </bean>
-   <bean id="IndexerTaskTrigger" class="com.dove.core.task.TaskTrigger">
+   <bean id="IndexerTaskTrigger" class="com.coogasales.core.task.TaskTrigger">
       <property name="task" ref="IndexerTask" />
       <property name="jobDetail" ref="IndexerTaskJob" />
       <property name="config" ref="ContextProperties" />
@@ -383,12 +383,12 @@
       <property name="targetMethod" value="run" />
       <property name="concurrent" value="false" />
    </bean>
-   <bean id="StatsCollectorTrigger" class="com.dove.core.task.TaskTrigger">
+   <bean id="StatsCollectorTrigger" class="com.coogasales.core.task.TaskTrigger">
       <property name="task" ref="StatsCollector" />
       <property name="jobDetail" ref="StatsCollectorJob" />
       <property name="config" ref="ContextProperties" />
    </bean>
-   <bean id="ProductNews" class="com.dove.core.rss.ProductNews">
+   <bean id="ProductNews" class="com.coogasales.core.rss.ProductNews">
       <property name="feedMessageDao" ref="FeedMessageDAO" />
       <property name="config" ref="ContextProperties" />
       <property name="userDao" ref="UserDAO" />
@@ -400,12 +400,12 @@
       <property name="targetMethod" value="run" />
       <property name="concurrent" value="false" />
    </bean>
-   <bean id="ProductNewsTrigger" class="com.dove.core.task.TaskTrigger">
+   <bean id="ProductNewsTrigger" class="com.coogasales.core.task.TaskTrigger">
       <property name="task" ref="ProductNews" />
       <property name="jobDetail" ref="ProductNewsJob" />
       <property name="config" ref="ContextProperties" />
    </bean>
-   <bean id="DigestProcessor" class="com.dove.core.document.DigestProcessor">
+   <bean id="DigestProcessor" class="com.coogasales.core.document.DigestProcessor">
       <property name="documentDao" ref="DocumentDAO" />
       <property name="config" ref="ContextProperties" />
       <property name="sender" ref="EMailSender" />
@@ -418,14 +418,14 @@
       <property name="targetMethod" value="run" />
       <property name="concurrent" value="false" />
    </bean>
-   <bean id="DigestProcessorTrigger" class="com.dove.core.task.TaskTrigger">
+   <bean id="DigestProcessorTrigger" class="com.coogasales.core.task.TaskTrigger">
       <property name="task" ref="DigestProcessor" />
       <property name="jobDetail" ref="DigestProcessorJob" />
       <property name="config" ref="ContextProperties" />
    </bean>
    
    <!-- Authentication -->
-   <bean id="DefaultAuthenticator" class="com.dove.core.security.authentication.DefaultAuthenticator">
+   <bean id="DefaultAuthenticator" class="com.coogasales.core.security.authentication.DefaultAuthenticator">
       <property name="userDAO" ref="UserDAO" />
    </bean>
 </beans>

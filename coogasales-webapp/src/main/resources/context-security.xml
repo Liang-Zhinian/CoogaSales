@@ -22,10 +22,10 @@
       <property name="realmName" value="Security Realm" />
     </bean>        
     
-    <bean id="LDAuthenticationDetailsSource" class="com.dove.core.security.spring.LDAuthenticationDetailsSource" />
-    <bean id="LDAuthenticationProvider" class="com.dove.core.security.spring.LDAuthenticationProvider" />
+    <bean id="LDAuthenticationDetailsSource" class="com.coogasales.core.security.spring.LDAuthenticationDetailsSource" />
+    <bean id="LDAuthenticationProvider" class="com.coogasales.core.security.spring.LDAuthenticationProvider" />
     <bean id="AdminAuthenticationProvider"  class="${security.adminauthprovider}" />
-    <bean id="LDAccessDecisionManager" class="com.dove.core.security.spring.LDAccessDecisionManager">
+    <bean id="LDAccessDecisionManager" class="com.coogasales.core.security.spring.LDAccessDecisionManager">
         <constructor-arg>
             <list>
                 <bean
@@ -35,15 +35,15 @@
         </constructor-arg>
     </bean>
     <bean id="LDAuthenticationSuccessHandler"
-        class="com.dove.core.security.spring.LDAuthenticationSuccessHandler" />
+        class="com.coogasales.core.security.spring.LDAuthenticationSuccessHandler" />
     <bean id="LDAuthenticationFailureHandler"
-        class="com.dove.core.security.spring.LDAuthenticationFailureHandler" />
+        class="com.coogasales.core.security.spring.LDAuthenticationFailureHandler" />
     <security:authentication-manager id="AuthenticationManager">
         <security:authentication-provider ref='LDAuthenticationProvider' />
     </security:authentication-manager>
-    <bean id="LDAnonymousLoginFilter" class="com.dove.core.security.spring.LDAnonymousLoginFilter" />
+    <bean id="LDAnonymousLoginFilter" class="com.coogasales.core.security.spring.LDAnonymousLoginFilter" />
     <bean id="LDSecurityContextRepository"
-        class="com.dove.core.security.spring.LDSecurityContextRepository" />
+        class="com.coogasales.core.security.spring.LDSecurityContextRepository" />
     <security:authentication-manager id="AdminAuthenticationManager">
         <security:authentication-provider ref='AdminAuthenticationProvider' />
     </security:authentication-manager>

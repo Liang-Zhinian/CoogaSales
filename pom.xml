@@ -764,9 +764,9 @@
     </dependencyManagement>
 
 	<modules>
-        <module>dove-util</module>
-        <module>dove-core</module>
-        <module>dove-i18n</module>
-    <module>dove-webapp</module>
+        <module>coogasales-util</module>
+        <module>coogasales-core</module>
+        <module>coogasales-i18n</module>
+        <module>coogasales-webapp</module>
 	</modules>
 </project>

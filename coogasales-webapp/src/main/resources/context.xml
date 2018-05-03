@@ -21,13 +21,13 @@
     <import resource="classpath*:context-security.xml" />
     <import resource="classpath*:context/context-*.xml" />
  
-    <bean id="MessengerRemoteService" init-method="init" class="com.dove.web.remote.MessengerRemoteServiceImpl">
+    <bean id="MessengerRemoteService" init-method="init" class="com.coogasales.web.remote.MessengerRemoteServiceImpl">
         <property name="eventCollector" ref="EventCollector" />
         <property name="config" ref="ContextProperties" />
     </bean>
     
     <!-- This post processor ensures placeholders substitutions -->
-    <bean id="PropertyPlaceholderConfigurer" class="com.dove.util.spring.PropertiesPlaceHolder"
+    <bean id="PropertyPlaceholderConfigurer" class="com.coogasales.util.spring.PropertiesPlaceHolder"
         lazy-init="false" abstract="false" autowire="default">
         <property name="locations">
             <list>
@@ -38,7 +38,7 @@
     <bean id="ContextProperties" class="${registry}">
         <property name="maxBackups" value="10" />
     </bean>
-    <bean id="Context" class="com.dove.util.Context" abstract="false"
+    <bean id="Context" class="com.coogasales.util.Context" abstract="false"
         lazy-init="default" autowire="default" />
     <!-- DataSource -->
     <bean id="DataSource" class="org.apache.commons.dbcp.BasicDataSource">
@@ -72,7 +72,7 @@
         abstract="false" lazy-init="default" autowire="default">
         <property name="dataSource" ref="DataSource" />
         <property name="entityInterceptor">
-            <bean class="com.dove.core.PersistenceObjectInterceptor" />
+            <bean class="com.coogasales.core.PersistenceObjectInterceptor" />
         </property>
         <property name="mappingLocations" value="classpath*:mappings/*.hbm.xml" />
         <property name="hibernateProperties">
@@ -109,7 +109,7 @@
     <bean id="GarbageCollector"
         class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
         <property name="targetObject">
-            <bean class="com.dove.web.GarbageCollector" />
+            <bean class="com.coogasales.web.GarbageCollector" />
         </property>
         <property name="targetMethod" value="gc" />
         <property name="concurrent" value="false" />
@@ -121,7 +121,7 @@
     </bean>
 
     <!-- Scheduler -->
-    <bean id="Scheduler" class="com.dove.core.task.SchedulerFactoryBean" destroy-method="destroy">
+    <bean id="Scheduler" class="com.coogasales.core.task.SchedulerFactoryBean" destroy-method="destroy">
         <property name="waitForJobsToCompleteOnShutdown" value="true" />
         <property name="triggers">
             <list>

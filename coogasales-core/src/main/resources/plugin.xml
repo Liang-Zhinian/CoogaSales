@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
-<plugin id="dove-core" version="1.0.0" class="com.dove.core.CorePlugin">
+<plugin id="dove-core" version="1.0.0" class="com.coogasales.core.CorePlugin">
   <extension-point id="DbInit">
     <parameter-def id="name" />
     <parameter-def id="sqlFile" />
@@ -182,58 +182,58 @@
 
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="jpgThumb">
     <parameter id="extension" value="jpg" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="jpegThumb">
     <parameter id="extension" value="jpeg" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="gifThumb">
     <parameter id="extension" value="gif" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="pngThumb">
     <parameter id="extension" value="png" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="bmpThumb">
     <parameter id="extension" value="bmp" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="tifThumb">
     <parameter id="extension" value="tif" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="tiffThumb">
     <parameter id="extension" value="tiff" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="psdThumb">
     <parameter id="extension" value="psd" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.ImageThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.ImageThumbnailBuilder" />
   </extension>  
   <extension plugin-id="dove-core" point-id="ThumbnailBuilder" id="pdfThumb">
     <parameter id="extension" value="pdf" />
-    <parameter id="class" value="com.dove.core.document.thumbnail.PdfThumbnailBuilder" />
+    <parameter id="class" value="com.coogasales.core.document.thumbnail.PdfThumbnailBuilder" />
   </extension>
 
 
   <extension plugin-id="dove-core" point-id="Search" id="fulltextSearch">
     <parameter id="type" value="0" />
-    <parameter id="class" value="com.dove.core.searchengine.FulltextSearch" />
-    <parameter id="options" value="com.dove.core.searchengine.FulltextSearchOptions" />
+    <parameter id="class" value="com.coogasales.core.searchengine.FulltextSearch" />
+    <parameter id="options" value="com.coogasales.core.searchengine.FulltextSearchOptions" />
   </extension>
 
   <extension plugin-id="dove-core" point-id="Search" id="tagSearch">
     <parameter id="type" value="1" />
-    <parameter id="class" value="com.dove.core.searchengine.TagSearch" />
-    <parameter id="options" value="com.dove.core.searchengine.SearchOptions" />
+    <parameter id="class" value="com.coogasales.core.searchengine.TagSearch" />
+    <parameter id="options" value="com.coogasales.core.searchengine.SearchOptions" />
   </extension>
 
   <extension plugin-id="dove-core" point-id="Search" id="folderSearch">
     <parameter id="type" value="3" />
-    <parameter id="class" value="com.dove.core.searchengine.folder.FolderSearch" />
-    <parameter id="options" value="com.dove.core.searchengine.folder.FolderSearchOptions" />
+    <parameter id="class" value="com.coogasales.core.searchengine.folder.FolderSearch" />
+    <parameter id="options" value="com.coogasales.core.searchengine.folder.FolderSearchOptions" />
   </extension>
   
   <extension plugin-id="dove-core" point-id="DbInit" id="coreDbInit">
@@ -273,7 +273,7 @@
   
   <extension plugin-id="dove-core" point-id="TokenFilter" id="tfStemmer">
 	<parameter id="name" value="stemmer" />
-	<parameter id="factory" value="com.dove.core.searchengine.analyzer.SnowballFilterFactory" />
+	<parameter id="factory" value="com.coogasales.core.searchengine.analyzer.SnowballFilterFactory" />
   </extension>
   <extension plugin-id="dove-core" point-id="TokenFilter" id="tfWordDelim">
 	<parameter id="name" value="worddelimiter" />
@@ -300,11 +300,11 @@
   <extension plugin-id="dove-core" point-id="FormatConverter" id="imageConv">
 		<parameter id="in" value="png,gif,jpg,jpeg,tif,tiff,bmp,psd"/>
 		<parameter id="out" value="pdf"/>
-		<parameter id="class" value="com.dove.core.conversion.ImageConverter"/>
+		<parameter id="class" value="com.coogasales.core.conversion.ImageConverter"/>
   </extension>  
   <extension plugin-id="dove-core" point-id="FormatConverter" id="catchallConv">
 		<parameter id="in" value="*"/>
 		<parameter id="out" value="pdf"/>
-		<parameter id="class" value="com.dove.core.conversion.NotAvailableConverter"/>
+		<parameter id="class" value="com.coogasales.core.conversion.NotAvailableConverter"/>
   </extension>
 </plugin>

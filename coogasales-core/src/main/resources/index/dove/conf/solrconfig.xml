@@ -426,7 +426,7 @@
   </searchComponent>
 
   <updateRequestProcessorChain name="language">
-    <processor class="com.dove.core.searchengine.LanguageProcessorFactory" />
+    <processor class="com.coogasales.core.searchengine.LanguageProcessorFactory" />
     <processor class="solr.LogUpdateProcessorFactory" />
     <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>

@@ -88,9 +88,9 @@
     <!-- LogicalDOC text field -->
     <fieldType name="text_std" class="solr.TextField">
         <analyzer type="index"
-            class="com.dove.core.searchengine.analyzer.FilteredAnalyzer" />
+            class="com.coogasales.core.searchengine.analyzer.FilteredAnalyzer" />
         <analyzer type="query"
-            class="com.dove.core.searchengine.analyzer.FilteredAnalyzer" />
+            class="com.coogasales.core.searchengine.analyzer.FilteredAnalyzer" />
     </fieldType>
     
     <fieldType class="solr.TextField" name="spell">

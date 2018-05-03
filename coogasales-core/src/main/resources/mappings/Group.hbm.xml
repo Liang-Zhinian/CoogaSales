@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-lazy="false" auto-import="false">
-  <class name="com.dove.core.security.Group" table="ld_group" where="ld_deleted=0">
+  <class name="com.coogasales.core.security.Group" table="ld_group" where="ld_deleted=0">
     <cache usage="read-write" />
     <id name="id" type="long" column="ld_id" unsaved-value="0">
       <generator class="hilo" />
@@ -16,7 +16,7 @@
     <property name="type" type="int" column="ld_type" not-null="true" />
     <!--  set name="users" table="ld_usergroup" lazy="true">
       <key column="ld_groupid" />
-      <many-to-many column="ld_userid" class="com.dove.core.security.User" where="ld_deleted=0"/>
+      <many-to-many column="ld_userid" class="com.coogasales.core.security.User" where="ld_deleted=0"/>
     </set -->
   </class>
 </hibernate-mapping>

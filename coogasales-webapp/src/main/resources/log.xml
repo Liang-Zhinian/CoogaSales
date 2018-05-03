@@ -15,7 +15,7 @@
       <param name="File" value="${dove.repository}/logs/dms.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
-      <layout class="com.dove.web.util.HTMLLayout"></layout>
+      <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="DB" class="org.apache.log4j.RollingFileAppender">
       <param name="File" value="${dove.repository}/logs/db.log" />
@@ -48,7 +48,7 @@
       <param name="File" value="${dove.repository}/logs/indexoptimizer.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
-      <layout class="com.dove.web.util.HTMLLayout"></layout>
+      <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="TagsProcessor" class="org.apache.log4j.RollingFileAppender">
       <param name="File" value="${dove.repository}/logs/tagsprocessor.log" />
@@ -63,7 +63,7 @@
       <param name="File" value="${dove.repository}/logs/tagsprocessor.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
-      <layout class="com.dove.web.util.HTMLLayout"></layout>
+      <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="IndexerTask" class="org.apache.log4j.RollingFileAppender">
       <param name="File" value="${dove.repository}/logs/indexertask.log" />
@@ -78,7 +78,7 @@
       <param name="File" value="${dove.repository}/logs/indexertask.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
-      <layout class="com.dove.web.util.HTMLLayout"></layout>
+      <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="ProductNews" class="org.apache.log4j.RollingFileAppender">
       <param name="File" value="${dove.repository}/logs/productnews.log" />
@@ -93,7 +93,7 @@
       <param name="File" value="${dove.repository}/logs/productnews.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
-      <layout class="com.dove.web.util.HTMLLayout"></layout>
+      <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="DigestProcessor" class="org.apache.log4j.RollingFileAppender">
       <param name="File" value="${dove.repository}/logs/digestprocessor.log" />
@@ -108,7 +108,7 @@
       <param name="File" value="${dove.repository}/logs/digestprocessor.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
-      <layout class="com.dove.web.util.HTMLLayout"></layout>
+      <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="spring" class="org.apache.log4j.RollingFileAppender">
       <param name="File" value="D:/Dove-Devel/repository/logs/spring.log" />
@@ -132,7 +132,7 @@
       <priority value="error" />
       <appender-ref ref="DB" />
    </category>
-   <category name="com.dove.cmis" additivity="false">
+   <category name="com.coogasales.cmis" additivity="false">
       <priority value="warn" />
       <appender-ref ref="CMIS" />
    </category>
@@ -140,36 +140,36 @@
       <priority value="warn" />
       <appender-ref ref="CMIS" />
    </category>   
-   <category name="com.dove.core" additivity="true">
+   <category name="com.coogasales.core" additivity="true">
       <priority value="info" />
    </category>
-   <category name="com.dove.web" additivity="true">
+   <category name="com.coogasales.web" additivity="true">
       <priority value="info" />
    </category>
-   <category name="com.dove.core.security" additivity="true">
+   <category name="com.coogasales.core.security" additivity="true">
       <priority value="warn" />
    </category>
-   <category name="com.dove.core.searchengine.IndexOptimizer" additivity="false">
+   <category name="com.coogasales.core.searchengine.IndexOptimizer" additivity="false">
       <priority value="info" />
       <appender-ref ref="IndexOptimizer" />
       <appender-ref ref="IndexOptimizer_WEB" />
    </category>
-   <category name="com.dove.core.document.TagsProcessor" additivity="false">
+   <category name="com.coogasales.core.document.TagsProcessor" additivity="false">
       <priority value="info" />
       <appender-ref ref="TagsProcessor" />
       <appender-ref ref="TagsProcessor_WEB" />
    </category>
-   <category name="com.dove.core.searchengine.IndexerTask" additivity="false">
+   <category name="com.coogasales.core.searchengine.IndexerTask" additivity="false">
       <priority value="info" />
       <appender-ref ref="IndexerTask" />
       <appender-ref ref="IndexerTask_WEB" />
    </category>
-   <category name="com.dove.core.rss.ProductNews" additivity="false">
+   <category name="com.coogasales.core.rss.ProductNews" additivity="false">
       <priority value="info" />
       <appender-ref ref="ProductNews" />
       <appender-ref ref="ProductNews_WEB" />
    </category>
-   <category name="com.dove.core.document.DigestProcessor" additivity="false">
+   <category name="com.coogasales.core.document.DigestProcessor" additivity="false">
       <priority value="info" />
       <appender-ref ref="DigestProcessor" />
       <appender-ref ref="DigestProcessor_WEB" />
@@ -178,7 +178,7 @@
       <priority value="debug" />
       <appender-ref ref="spring" />
    </category>
-   <category name="com.dove.core.automation" additivity="true">
+   <category name="com.coogasales.core.automation" additivity="true">
       <priority value="debug" />
       <appender-ref ref="automation" />
    </category>   
