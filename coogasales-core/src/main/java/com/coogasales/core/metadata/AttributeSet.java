@@ -4,7 +4,7 @@ package com.coogasales.core.metadata;
 /**
  * Represents a set of attributes
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class AttributeSet extends ExtensibleObject {

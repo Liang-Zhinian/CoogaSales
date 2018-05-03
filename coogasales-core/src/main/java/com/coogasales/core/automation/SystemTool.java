@@ -8,7 +8,7 @@ import com.coogasales.util.exec.Exec;
 /**
  * Utility functions for the system
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5.1
  */
 public class SystemTool {

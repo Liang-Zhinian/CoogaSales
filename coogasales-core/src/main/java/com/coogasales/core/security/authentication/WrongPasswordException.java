@@ -3,7 +3,7 @@ package com.coogasales.core.security.authentication;
 /**
  * Raised when given password is not correct
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class WrongPasswordException extends AuthenticationException {

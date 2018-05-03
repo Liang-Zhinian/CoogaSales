@@ -16,7 +16,7 @@ import com.coogasales.core.security.dao.UserDAO;
 /**
  * Basic implementation of <code>SecurityManager</code>
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 3.0
  */
 public class SecurityManagerImpl implements SecurityManager {

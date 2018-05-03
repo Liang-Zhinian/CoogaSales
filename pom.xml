@@ -29,9 +29,9 @@
 	</developers>
 	
 	<scm>
-    <connection>scm:svn:https://logicaldoc.svn.sourceforge.net/svnroot/logicaldoc/community/logicaldoc/trunk</connection>
-    <developerConnection>scm:svn:https://logicaldoc.svn.sourceforge.net/svnroot/logicaldoc/community/logicaldoc/trunk</developerConnection>
-    <url>http://logicaldoc.svn.sourceforge.net/svnroot/logicaldoc/logicaldoc/trunk</url>
+    <connection>scm:svn:https://coogasales.svn.sourceforge.net/svnroot/coogasales/community/coogasales/trunk</connection>
+    <developerConnection>scm:svn:https://coogasales.svn.sourceforge.net/svnroot/coogasales/community/coogasales/trunk</developerConnection>
+    <url>http://coogasales.svn.sourceforge.net/svnroot/coogasales/coogasales/trunk</url>
   </scm>
 <repositories>
     <repository>

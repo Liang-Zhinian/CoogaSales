@@ -3,7 +3,7 @@ package com.coogasales.core.security.authentication;
 /**
  * A generic exception during the authentication process
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class AuthenticationException extends RuntimeException{

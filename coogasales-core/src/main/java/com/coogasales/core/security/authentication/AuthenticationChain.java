@@ -124,7 +124,7 @@ public class AuthenticationChain implements Authenticator {
 	private void init() {
 		Context context = Context.get();
 		PluginRegistry registry = PluginRegistry.getInstance();
-		Collection<Extension> exts = registry.getExtensions("dove-core", "Authentication");
+		Collection<Extension> exts = registry.getExtensions("coogasales-core", "Authentication");
 
 		// Sort the extensions according to ascending position
 		List<Extension> sortedExts = new ArrayList<Extension>();

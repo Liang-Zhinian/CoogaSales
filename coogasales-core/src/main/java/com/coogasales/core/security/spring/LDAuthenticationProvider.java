@@ -30,7 +30,7 @@ import com.coogasales.core.security.authentication.PasswordExpiredException;
  * This Authentication provider users the <code>AuthenticationChain</code> to
  * authenticate the users.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class LDAuthenticationProvider implements AuthenticationProvider {

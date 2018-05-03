@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Simple utility class to give access to the system's log.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5.1
  */
 public class LogTool {

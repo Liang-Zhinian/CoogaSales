@@ -23,7 +23,7 @@ import com.coogasales.util.config.ContextProperties;
  * the database is not available or the max concurrent sessions number is
  * reached.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class AdminAuthenticationProvider implements AuthenticationProvider {

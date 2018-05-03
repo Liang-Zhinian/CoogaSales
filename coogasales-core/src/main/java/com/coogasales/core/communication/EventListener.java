@@ -5,7 +5,7 @@ package com.coogasales.core.communication;
 /**
  * A listener for the event emitted by the collector
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.7.1
  */
 public interface EventListener {

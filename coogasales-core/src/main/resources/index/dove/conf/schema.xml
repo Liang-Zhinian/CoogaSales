@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<schema name="logicaldoc" version="1.4">
+<schema name="coogasales" version="1.4">
     <field name="id" type="string" indexed="true" stored="true" required="true" />
     <field name="tenantId" type="long" indexed="true" stored="true"
         required="true" default="1" />
@@ -85,7 +85,7 @@
         </analyzer>
     </fieldType>
     
-    <!-- LogicalDOC text field -->
+    <!-- coogasales text field -->
     <fieldType name="text_std" class="solr.TextField">
         <analyzer type="index"
             class="com.coogasales.core.searchengine.analyzer.FilteredAnalyzer" />

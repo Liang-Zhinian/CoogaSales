@@ -13,7 +13,7 @@ import com.coogasales.util.Context;
 /**
  * Listener that initializes and destroys the Spring Context
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  *
  */

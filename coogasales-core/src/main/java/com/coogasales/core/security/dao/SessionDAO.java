@@ -8,7 +8,7 @@ import com.coogasales.core.security.Session;
 /**
  * DAO for <code>UserSession</code> handling.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.7
  */
 public interface SessionDAO extends PersistentObjectDAO<Session> {

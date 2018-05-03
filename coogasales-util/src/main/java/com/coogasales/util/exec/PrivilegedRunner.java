@@ -50,7 +50,7 @@ public class PrivilegedRunner {
 		} else if (isUnix()) {
 			elevator.add("xterm");
 			elevator.add("-title");
-			elevator.add("Dove");
+			elevator.add("coogasales");
 			elevator.add("-e");
 			elevator.add("sudo");
 			elevator.add(command);
@@ -68,7 +68,7 @@ public class PrivilegedRunner {
 		File elevator = new File(path);
 
 		FileOutputStream out = new FileOutputStream(elevator);
-		InputStream in = getClass().getResourceAsStream("/com/dove/util/exec/windows/elevate.js");
+		InputStream in = getClass().getResourceAsStream("/com/coogasales/util/exec/windows/elevate.js");
 		copyStream(out, in);
 		in.close();
 		out.close();
@@ -83,7 +83,7 @@ public class PrivilegedRunner {
 
 		FileOutputStream out = new FileOutputStream(elevator);
 		InputStream in = getClass().getResourceAsStream(
-				"/com/dove/util/exec/mac/run-with-privileges-on-osx");
+				"/com/coogasales/util/exec/mac/run-with-privileges-on-osx");
 		copyStream(out, in);
 		in.close();
 		out.close();

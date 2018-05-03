@@ -3,7 +3,7 @@ package com.coogasales.core.automation;
 /**
  * Utility functions for manipulating classes and resources.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5.1
  */
 public class ClassTool {

@@ -22,7 +22,7 @@ import com.coogasales.util.Context;
  * This handler gets the j_successurl request parameter and use it's value to
  * redirect the user after a successful login.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class LDAuthenticationSuccessHandler implements AuthenticationSuccessHandler {

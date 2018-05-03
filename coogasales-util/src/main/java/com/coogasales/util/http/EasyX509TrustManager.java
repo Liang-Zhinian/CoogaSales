@@ -8,7 +8,7 @@ import javax.net.ssl.X509TrustManager;
 /**
  * Trust manager that trusts all the certificates.
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class EasyX509TrustManager implements X509TrustManager {

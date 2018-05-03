@@ -3,7 +3,7 @@ package com.coogasales.core.security;
 /**
  * Simple bean to map a relationship between a user and it's groups
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.7.1
  */
 public class UserGroup {

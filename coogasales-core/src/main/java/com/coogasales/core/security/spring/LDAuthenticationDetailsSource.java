@@ -8,7 +8,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
  * Our customization of an <code>AuthenticationDetailsSource</code> used to
  * extract a third authentication parameter for the 2FA.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.7.3
  */
 public class LDAuthenticationDetailsSource extends WebAuthenticationDetailsSource {

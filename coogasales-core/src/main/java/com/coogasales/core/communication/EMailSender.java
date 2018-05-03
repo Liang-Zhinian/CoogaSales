@@ -51,7 +51,7 @@ public class EMailSender {
 
 	private String host = "localhost";
 
-	private String sender = "logicaldoc@acme.com";
+	private String sender = "coogasales@acme.com";
 
 	private String username = "";
 

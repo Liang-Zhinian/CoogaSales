@@ -3,7 +3,7 @@ package com.coogasales.core.security.authentication;
 /**
  * Raised when the password has expired
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class PasswordExpiredException extends AuthenticationException {

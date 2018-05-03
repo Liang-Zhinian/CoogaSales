@@ -8,7 +8,7 @@ import com.coogasales.util.io.FileUtil;
 /**
  * Same as ZipInputStream but deletes the file after closing.
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class AutoDeleteZipInputStream extends ZipInputStream {

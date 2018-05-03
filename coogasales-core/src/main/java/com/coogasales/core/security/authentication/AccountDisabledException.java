@@ -3,7 +3,7 @@ package com.coogasales.core.security.authentication;
 /**
  * Raised when the account exists but it is disabled
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  *
  */

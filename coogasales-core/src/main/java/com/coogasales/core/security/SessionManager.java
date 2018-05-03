@@ -403,7 +403,7 @@ public class SessionManager extends ConcurrentHashMap<String, Session> {
 	/**
 	 * Each minute iterates over the sessions killing the expired ones
 	 * 
-	 * @author Marco Meschieri - LogicalDOC
+	 * @author Marco Meschieri - coogasales
 	 * @since 7.5.3
 	 */
 	class SessionTimeoutWatchDog extends Thread {

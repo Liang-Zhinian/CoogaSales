@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Utility methods for handling URLs
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class UrlUtil {

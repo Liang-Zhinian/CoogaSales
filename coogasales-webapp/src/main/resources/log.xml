@@ -3,7 +3,7 @@
 <!-- <!DOCTYPE log4j:configuration SYSTEM "http://svn.apache.org/viewvc/logging/log4j/branches/v1_2-branch/src/java/org/apache/log4j/xml/log4j.dtd?view=co"> -->
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" threshold="null" debug="false">
    <appender name="DMS" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/dms.log" />
+      <param name="File" value="${coogasales.repository}/logs/dms.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -12,13 +12,13 @@
       </layout>
    </appender>
    <appender name="DMS_WEB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/dms.log.html" />
+      <param name="File" value="${coogasales.repository}/logs/dms.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="DB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/db.log" />
+      <param name="File" value="${coogasales.repository}/logs/db.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -27,7 +27,7 @@
       </layout>
    </appender>
    <appender name="CMIS" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/cmis.log" />
+      <param name="File" value="${coogasales.repository}/logs/cmis.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -36,7 +36,7 @@
       </layout>
    </appender>   
    <appender name="IndexOptimizer" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/indexoptimizer.log" />
+      <param name="File" value="${coogasales.repository}/logs/indexoptimizer.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -45,13 +45,13 @@
       </layout>
    </appender>
    <appender name="IndexOptimizer_WEB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/indexoptimizer.log.html" />
+      <param name="File" value="${coogasales.repository}/logs/indexoptimizer.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="TagsProcessor" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/tagsprocessor.log" />
+      <param name="File" value="${coogasales.repository}/logs/tagsprocessor.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -60,13 +60,13 @@
       </layout>
    </appender>
    <appender name="TagsProcessor_WEB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/tagsprocessor.log.html" />
+      <param name="File" value="${coogasales.repository}/logs/tagsprocessor.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="IndexerTask" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/indexertask.log" />
+      <param name="File" value="${coogasales.repository}/logs/indexertask.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -75,13 +75,13 @@
       </layout>
    </appender>
    <appender name="IndexerTask_WEB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/indexertask.log.html" />
+      <param name="File" value="${coogasales.repository}/logs/indexertask.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="ProductNews" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/productnews.log" />
+      <param name="File" value="${coogasales.repository}/logs/productnews.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -90,13 +90,13 @@
       </layout>
    </appender>
    <appender name="ProductNews_WEB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/productnews.log.html" />
+      <param name="File" value="${coogasales.repository}/logs/productnews.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="DigestProcessor" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/digestprocessor.log" />
+      <param name="File" value="${coogasales.repository}/logs/digestprocessor.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -105,13 +105,13 @@
       </layout>
    </appender>
    <appender name="DigestProcessor_WEB" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="${dove.repository}/logs/digestprocessor.log.html" />
+      <param name="File" value="${coogasales.repository}/logs/digestprocessor.log.html" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <layout class="com.coogasales.web.util.HTMLLayout"></layout>
    </appender>
    <appender name="spring" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="D:/Dove-Devel/repository/logs/spring.log" />
+      <param name="File" value="D:/coogasales-Devel/repository/logs/spring.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />
@@ -120,7 +120,7 @@
       </layout>
    </appender>
    <appender name="automation" class="org.apache.log4j.RollingFileAppender">
-      <param name="File" value="D:/Dove-Devel/repository/logs/automation.log" />
+      <param name="File" value="D:/coogasales-Devel/repository/logs/automation.log" />
       <param name="MaxFileSize" value="5MB" />
       <param name="MaxBackupIndex" value="5" />
       <param name="Append" value="true" />

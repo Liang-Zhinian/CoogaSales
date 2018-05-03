@@ -26,7 +26,7 @@ public class LDAnonymousLoginFilter extends GenericFilterBean {
 
 	private static Logger log = LoggerFactory.getLogger(LDAnonymousLoginFilter.class);
 
-	static final String FILTER_APPLIED = "__com_logicaldoc_core_security_spring_AnonymousLoginFilter_applied";
+	static final String FILTER_APPLIED = "__com_coogasales_core_security_spring_AnonymousLoginFilter_applied";
 
 	public LDAnonymousLoginFilter() {
 

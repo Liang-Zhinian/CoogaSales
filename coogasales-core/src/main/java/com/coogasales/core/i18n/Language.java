@@ -18,7 +18,7 @@ import org.tartarus.snowball.SnowballProgram;
 //import com.coogasales.core.searchengine.StandardSearchEngine;
 
 /**
- * Instances of this class represent a language supported by the LogicalDOC DMS
+ * Instances of this class represent a language supported by the coogasales DMS
  * 
  * @author Alessandro Gasparini - Logical Objects
  * @since 3.0.3

@@ -1,0 +1,2 @@
+mvn deploy:deploy-file -Dfile=jtds-1.2.5.jar -DgroupId=net.sourceforge.jtds -DartifactId=jtds -Dversion=1.2.5 -Dpackaging=jar -DrepositoryId=coogasales-community -Durl=sftp://web.sourceforge.net/home/groups/l/lo/coogasales/htdocs/maven
+;sftp://eva01/home/maven/repository3/

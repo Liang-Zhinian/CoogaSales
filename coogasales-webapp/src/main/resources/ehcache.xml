@@ -1,4 +1,4 @@
-<ehcache name="dove">
+<ehcache name="coogasales">
 	<diskStore path="java.io.tmpdir" />
 
 	<defaultCache maxElementsInMemory="300" eternal="false"

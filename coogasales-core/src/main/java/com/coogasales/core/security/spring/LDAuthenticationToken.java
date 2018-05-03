@@ -6,9 +6,9 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.GrantedAuthority;
 
 /**
- * A LogicalDOC aware authentication token
+ * A coogasales aware authentication token
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class LDAuthenticationToken extends UsernamePasswordAuthenticationToken {

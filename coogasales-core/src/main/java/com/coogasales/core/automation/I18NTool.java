@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Utility class to handle dates from inside Velocity macros
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.3
  */
 public class I18NTool extends HashMap<String, String> {

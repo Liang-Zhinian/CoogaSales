@@ -24,7 +24,7 @@ import com.coogasales.util.Context;
  * This handler gets the j_failureurl request parameter and use it's value to
  * redirect the user after a successful login.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class LDAuthenticationFailureHandler implements AuthenticationFailureHandler {

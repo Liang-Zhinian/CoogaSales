@@ -38,7 +38,7 @@ public class PluginDbInit extends DBInit {
 		try {
 			// Acquire the 'DbInit' extensions of the core plugin
 			PluginRegistry registry = PluginRegistry.getInstance();
-			Collection<Extension> exts = registry.getExtensions("dove-core", "DbInit");
+			Collection<Extension> exts = registry.getExtensions("coogasales-core", "DbInit");
 
 			// Sort the extensions according to ascending position
 			List<Extension> sortedExts = new ArrayList<Extension>();

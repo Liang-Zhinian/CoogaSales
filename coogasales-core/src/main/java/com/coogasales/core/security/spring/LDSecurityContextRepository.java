@@ -20,7 +20,7 @@ import com.coogasales.core.security.SessionManager;
  * This repository avoid the use of sessions and simply use the current request
  * to store and retrieve the session ID.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class LDSecurityContextRepository implements SecurityContextRepository {

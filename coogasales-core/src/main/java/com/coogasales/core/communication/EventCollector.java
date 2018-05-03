@@ -23,7 +23,7 @@ import com.coogasales.util.config.ContextProperties;
 /**
  * A collector of events that can distribute them to a set of listeners
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.7.1
  */
 public class EventCollector {

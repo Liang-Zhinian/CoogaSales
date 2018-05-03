@@ -29,7 +29,7 @@ public class UserListenerManager {
 
 		// Acquire the 'UserListener' extensions of the core plugin
 		PluginRegistry registry = PluginRegistry.getInstance();
-		Collection<Extension> exts = registry.getExtensions("dove-core", "UserListener");
+		Collection<Extension> exts = registry.getExtensions("coogasales-core", "UserListener");
 
 		// Sort the extensions according to ascending position
 		List<Extension> sortedExts = new ArrayList<Extension>();

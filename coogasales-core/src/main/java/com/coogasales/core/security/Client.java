@@ -1,9 +1,9 @@
 package com.coogasales.core.security;
 
 /**
- * A remote client connected to LogicalDOC
+ * A remote client connected to coogasales
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class Client {

@@ -11,7 +11,7 @@ import org.apache.http.entity.mime.content.FileBody;
 /**
  * This is a file body that notifies about the progess a given listener
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class FileBodyCounter extends FileBody {

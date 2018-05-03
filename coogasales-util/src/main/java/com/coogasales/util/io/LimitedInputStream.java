@@ -9,7 +9,7 @@ import java.io.InputStream;
 /**
  * This is a decorator that limits a given input stream to a maximum size
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class LimitedInputStream extends FilterInputStream {

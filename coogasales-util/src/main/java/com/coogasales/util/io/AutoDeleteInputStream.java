@@ -9,7 +9,7 @@ import com.coogasales.util.io.FileUtil;
 /**
  * Wrapper around a standard InputStream that deletes the file after closing.
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class AutoDeleteInputStream extends InputStream {

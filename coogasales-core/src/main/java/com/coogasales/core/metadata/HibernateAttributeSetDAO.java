@@ -14,7 +14,7 @@ import com.coogasales.util.sql.SqlUtil;
 /**
  * Hibernate implementation of <code>TemplateDAO</code>
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5.0
  */
 @SuppressWarnings("unchecked")

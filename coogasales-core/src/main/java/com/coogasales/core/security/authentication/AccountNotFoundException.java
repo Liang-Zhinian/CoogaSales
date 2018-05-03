@@ -3,7 +3,7 @@ package com.coogasales.core.security.authentication;
 /**
  * Raised when the specified user was not found
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class AccountNotFoundException extends AuthenticationException {

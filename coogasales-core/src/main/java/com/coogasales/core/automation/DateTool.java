@@ -7,7 +7,7 @@ import com.ibm.icu.text.SimpleDateFormat;
 /**
  * Utility class to handle dates from inside Velocity macros
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.3
  */
 public class DateTool extends org.apache.velocity.tools.generic.DateTool {

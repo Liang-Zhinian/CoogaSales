@@ -22,7 +22,7 @@ import com.coogasales.util.config.ContextProperties;
 /**
  * Our customization of an <code>AffirmativeBased</code>
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.5
  */
 public class LDAccessDecisionManager extends UnanimousBased {

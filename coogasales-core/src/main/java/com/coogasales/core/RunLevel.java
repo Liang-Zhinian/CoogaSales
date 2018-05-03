@@ -16,7 +16,7 @@ import com.coogasales.util.plugin.PluginRegistry;
  * Represents an operative status of the whole application. Different aspects
  * are enabled depending on the current runlevel.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @since 7.6.4
  */
 public enum RunLevel {
@@ -95,7 +95,7 @@ public enum RunLevel {
 	public static List<String> getAspects() {
 		// Acquire the 'Aspect' extensions
 		PluginRegistry registry = PluginRegistry.getInstance();
-		Collection<Extension> exts = registry.getExtensions("dove-core", "Aspect");
+		Collection<Extension> exts = registry.getExtensions("coogasales-core", "Aspect");
 
 		List<String> aspects = new ArrayList<String>();
 		for (Extension ext : exts)

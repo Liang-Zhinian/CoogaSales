@@ -8,7 +8,7 @@ import com.coogasales.core.PersistentObjectDAO;
 /**
  * This class is a DAO-service for attribute sets.
  * 
- * @author Marco Meschieri - LogicalDOC
+ * @author Marco Meschieri - coogasales
  * @version 7.5
  */
 public interface AttributeSetDAO extends PersistentObjectDAO<AttributeSet> {

@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 import com.coogasales.util.config.ContextProperties;
 
 /**
- * This is the base class for Dove plugins.
+ * This is the base class for coogasales plugins.
  * 
  * The methods of this class are automatically invoked by the manager during
  * plug-in life cycle management (activation and deactivation).
@@ -28,9 +28,9 @@ import com.coogasales.util.config.ContextProperties;
  * @author Liang Zhinian - 
  * @since 1.0
  */
-public abstract class DovePlugin extends Plugin {
+public abstract class CoogaSalesPlugin extends Plugin {
 
-	protected static Logger log = LoggerFactory.getLogger(DovePlugin.class);
+	protected static Logger log = LoggerFactory.getLogger(CoogaSalesPlugin.class);
 
 	private static final String PLUGIN_PROPERTIES = "plugin.properties";
 

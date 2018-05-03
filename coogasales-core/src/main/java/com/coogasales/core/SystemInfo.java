@@ -21,23 +21,23 @@ public class SystemInfo {
 
 	protected static final long serialVersionUID = 1L;
 
-	protected String productName = "LogicalDOC Community";
+	protected String productName = "coogasales Community";
 
-	protected String product = "LogicalDOC";
+	protected String product = "coogasales";
 
 	protected String release = "7.6.4";
 
 	protected String year = "2006-2017";
 
-	protected String help = "http://help.logicaldoc.com";
+	protected String help = "http://help.coogasales.com";
 
-	protected String bugs = "http://bugs.logicaldoc.com";
+	protected String bugs = "http://bugs.coogasales.com";
 
-	protected String url = "http://www.logicaldoc.com";
+	protected String url = "http://www.coogasales.com";
 
-	protected String forum = "http://forums.logicaldoc.com";
+	protected String forum = "http://forums.coogasales.com";
 
-	protected String vendor = "LogicalDOC";
+	protected String vendor = "coogasales";
 
 	protected String vendorAddress = "via Aldo Moro interna, 3";
 
@@ -47,7 +47,7 @@ public class SystemInfo {
 
 	protected String vendorCity = "Carpi";
 
-	protected String support = "support@logicaldoc.com";
+	protected String support = "support@coogasales.com";
 
 	protected String installationId;
 
@@ -218,7 +218,7 @@ public class SystemInfo {
 		try {
 			// Acquire the 'SystemInfo' extensions of the core plugin
 			PluginRegistry registry = PluginRegistry.getInstance();
-			Collection<Extension> exts = registry.getExtensions("dove-core", "SystemInfo");
+			Collection<Extension> exts = registry.getExtensions("coogasales-core", "SystemInfo");
 
 			if (!exts.isEmpty()) {
 				String className = exts.iterator().next().getParameter("class").valueAsString();
@@ -248,7 +248,7 @@ public class SystemInfo {
 			try {
 				List<String> features = new ArrayList<String>();
 				PluginRegistry registry = PluginRegistry.getInstance();
-				Collection<Extension> exts = registry.getExtensions("dove-core", "Feature");
+				Collection<Extension> exts = registry.getExtensions("coogasales-core", "Feature");
 				for (Extension extension : exts) {
 					// Retrieve the task name
 					String name = extension.getParameter("name").valueAsString();

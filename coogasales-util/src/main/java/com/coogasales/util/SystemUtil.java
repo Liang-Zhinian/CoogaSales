@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Utility methods tpo get informations from the system
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  */
 public class SystemUtil {

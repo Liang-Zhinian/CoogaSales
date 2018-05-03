@@ -48,7 +48,7 @@ public class LanguageManager {
 
 		Collection<Extension> extensions = new ArrayList<Extension>();
 		try {
-			extensions = registry.getExtensions("dove-core", "Language");
+			extensions = registry.getExtensions("coogasales-core", "Language");
 		} catch (Throwable e) {
 			log.error(e.getMessage());
 		}

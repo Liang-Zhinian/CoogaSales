@@ -31,7 +31,7 @@ import com.coogasales.util.config.ContextProperties;
 /**
  * Central point where plugins are loaded and handled. The class is abstract and
  * must be personalized as needed. The used implementation can be specified with
- * the 'dove.app.pluginregistry' system property.
+ * the 'coogasales.app.pluginregistry' system property.
  * 
  * @author Liang Zhinian - 
  * @since 1.0

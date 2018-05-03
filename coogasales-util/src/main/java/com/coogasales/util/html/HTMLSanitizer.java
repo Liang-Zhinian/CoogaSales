@@ -8,7 +8,7 @@ import org.jsoup.safety.Whitelist;
 /**
  * Removes elements from an HTML document that may lead to security problems
  * 
- * @author Liang Zhinian - Dove
+ * @author Liang Zhinian - coogasales
  * @since 1.0
  *
  */

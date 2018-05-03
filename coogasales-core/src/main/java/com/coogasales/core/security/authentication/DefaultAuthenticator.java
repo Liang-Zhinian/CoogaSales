@@ -7,7 +7,7 @@ import com.coogasales.core.security.dao.UserDAO;
 
 /**
  * This is the basic authentication mechanism, that searches for the user in the
- * LogicalDOC database.
+ * coogasales database.
  * 
  * @author Sebastian Wenzky
  * @since 4.5

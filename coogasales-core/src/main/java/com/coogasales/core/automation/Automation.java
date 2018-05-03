@@ -24,7 +24,7 @@ import com.coogasales.util.config.ContextProperties;
 /**
  * Represents a Facade on Velocity
  * 
- * @author Marco Meschieri - LogicalDOC since <product_release>
+ * @author Marco Meschieri - coogasales since <product_release>
  */
 public class Automation {
 
